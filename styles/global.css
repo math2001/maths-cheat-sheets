@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, corbel, sans-serif;
     background-color: #eef0fc;
 }
 
@@ -7,4 +7,10 @@ section {
     background-color: #fff;
     padding: 10px;
     margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    /*font-family: Light Font*/
+
 }
