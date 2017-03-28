@@ -1,0 +1,24 @@
+.preview {
+    display: flex;
+    align-items: center;
+}
+
+.preview-result {
+    width: 50%;
+}
+
+.preview-input {
+    width: 50%;
+}
+
+/* ------------------------------------- */
+/* ------------ Explanation ------------ */
+/* ------------------------------------- */
+
+.explanations {
+    display: flex;
+}
+
+.explanation {
+    
+}
