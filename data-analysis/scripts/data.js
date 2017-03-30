@@ -34,6 +34,6 @@ class Data {
     }
 
     get range() {
-        return Math.max(this.numbers) - Math.min(this.numbers)
+        return Math.max(...this.numbers) - Math.min(...this.numbers)
     }
 }
