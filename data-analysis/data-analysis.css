@@ -11,6 +11,9 @@
     margin: 10px;
 }
 
+.preview-input.error {
+    border: 1px solid red;
+}
 
 /* ------------------------------------- */
 /* ------------ Explanation ------------ */
