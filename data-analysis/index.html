@@ -1,36 +1,55 @@
 <!doctype html>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../styles/global.css">
+<link rel="stylesheet" type="text/css" href="../styles/modules.css">
 <link rel="stylesheet" type="text/css" href="data-analysis.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto|Roboto+Mono" rel="stylesheet"> -->
 
-<h1>Data Analysis</h1>
-<section class="preview">
-    <div class="preview-input">
-        <textarea></textarea>
+<div class="wrapper">
+    <h1>Data Analysis</h1>
+    <section class="preview">
+        <div class="preview-input">
+            <textarea></textarea>
+        </div>
+        <table class="preview-result">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Median</td>
+                <td><code id="median"></code></td>
+            </tr>
+            <tr>
+                <td>Mean</td>
+                <td><code id="mean"></code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="section-center">
+        <h2>Explanations</h2>
+        <p>Here, you'll be able to find the vocabulary that is used, with some example.</p>
+        <p>Every example will use this set of data:</p>
+        <pre>92 67 14 34 55 99 51 5 42 38</pre>
+    </section>
+
+    <div class="explanations">
+        <section class="explanation">
+            <h3 class="explanation-title">Mean</h3>
+            <pre>mean = average</pre>
+            <p>→ It's the exact same!</p>
+            <p>The mean is the <b>sum of every values</b> divided by the <b>number of values</b>.</p>
+            <h4>Example</h4>
+            <pre>(92 + 67 + 14 + 34 + 55 + 99 + 51 + 5 + 42 + 38) / 10</pre>
+        </section>
+
+        <section class="explanation">
+            <h3 class="explanation-title">Median</h3>
+            <p>The median is the middle value. So, if there is an <i>odd</i> number of values, it's possible. But when there isn't, you have to take the 2 middle values, and get the <i>average</i> of them</p>
+            <p class="pro-tip">The median is the same as <code>Q<sub>2</sub></code>.</p>
+        </section>
     </div>
-    <table class="preview-result">
-        <tr>
-            <th>Name</th>
-            <th>Value</th>
-        </tr>
-        <tr>
-            <td>Median</td>
-            <td><code id="median"></code></td>
-        </tr>
-        <tr>
-            <td>Mean</td>
-            <td><code id="mean"></code></td>
-        </tr>
-    </table>
-</section>
-
-<div class="explanations">
-    <section class="explanation">
-        <h3 class="explanation-title">Mean</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </section>
-
-    <section class="explanation">
-        <h3 class="explanation-title">Median</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, consectetur!</p>
-    </section>
 </div>
+
+<!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script> -->

@@ -1,16 +1,39 @@
 body {
     font-family: Roboto, corbel, sans-serif;
-    background-color: #eef0fc;
+    background-color: #f5f8fa;
 }
 
 section {
     background-color: #fff;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px #ccc;
 }
 
 h1 {
-    text-align: center;
-    /*font-family: Light Font*/
+    font-size: 400%;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poiret One';
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+pre {
+    background-color: #eee;
+    font-family: "Roboto Mono", monospace;
+    padding: 10px;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
 }

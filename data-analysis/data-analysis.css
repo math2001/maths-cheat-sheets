@@ -16,9 +16,11 @@
 /* ------------------------------------- */
 
 .explanations {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
 }
 
 .explanation {
-    
+    margin: 0;
 }
