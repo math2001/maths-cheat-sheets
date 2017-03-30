@@ -32,12 +32,13 @@ Range: <span id="range"></span>
             <p>The mean is the <b>sum of every values</b> divided by the <b>number of values</b>.</p>
             <h4>Example</h4>
             <pre>(92 + 67 + 14 + 34 + 55 + 99 + 51 + 5 + 42 + 38) / 10 = 49.7</pre>
-            <p>→ The mean is <code>49.7</code></p>
         </section>
 
         <section class="explanation">
             <h3 class="explanation-title">Median</h3>
-            <p>The median is the middle value. So, if there is an <i>odd</i> number of values, it's possible. But when there isn't, you have to take the 2 middle values, and get the <i>average</i> of them</p>
+            <p>First, you have to sort the data in ascending order (from smallest to largest).</p>
+            <p class="pro-tip">In fact, you can sort it into descending order, it just that the you need your data in <i>ascending</i> for other stuff, like the quartiles for example.</p>
+            <p>The median is the middle value. So, if there is an <i>odd</i> number of values, it's possible. But when there isn't, you have to take the 2 middle values, and get the <i>average</i> of them.</p>
             <p class="pro-tip">The median is the same as <code>Q<sub>2</sub></code>.</p>
         </section>
 
@@ -45,13 +46,20 @@ Range: <span id="range"></span>
             <h3 class="explanation-title">Standard deviation</h3>
             <p>To get the standard deviation, you first need to find the mean.</p>
             <p>Once you have the mean, you need to get the square root of the mean of the squares of the difference between each mean and the number. Didn't understand a <i>thing</i>? Have a look at this:</p>
+            <h4>Example</h4>
             <pre>
 mean = 49.7
-squares' sum = (49.7 - 92)² + (49.7 - 67)² + (49.7 - 14)² ...
+squares' sum = (49.7 - 92)² + (49.7 - 67)² + (49.7 - 14)² + ...
 squares' mean = squares' sum / 10
 
 standard deviation = sqrt(squares' mean)
             </pre>
+        </section>
+        <section class="explanation">
+            <h3 class="explanation-title">Range</h3>
+            <p>The range is easy. It's the <i>largest value</i> minus the <i>smallest one</i></p>
+            <h4>Example</h4>
+            <pre>99 - 5 = 94</pre>
         </section>
     </div>
 </div>
