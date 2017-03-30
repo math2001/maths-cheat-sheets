@@ -1,15 +1,15 @@
 .preview {
+    border: 1px solid #aaa;
     display: flex;
     align-items: center;
 }
 
-.preview-result {
+.preview-result, .preview-input {
+    display: inline-block;
     width: 50%;
+    padding: 10px;
 }
 
-.preview-input {
-    width: 50%;
-}
 
 /* ------------------------------------- */
 /* ------------ Explanation ------------ */
