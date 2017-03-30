@@ -2,12 +2,14 @@
     border: 1px solid #aaa;
     display: flex;
     align-items: center;
+    align-content: space-around;
 }
 
 .preview-result, .preview-input {
     display: inline-block;
     width: 50%;
     padding: 10px;
+    margin: 10px;
 }
 
 
