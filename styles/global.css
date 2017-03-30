@@ -27,6 +27,7 @@ pre {
     background-color: #eee;
     font-family: "Roboto Mono", monospace;
     padding: 10px;
+    white-space: pre-line;
 }
 
 .wrapper {
