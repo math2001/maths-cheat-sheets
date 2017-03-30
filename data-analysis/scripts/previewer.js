@@ -18,10 +18,16 @@ class Previewer {
     }
 
     static updateResults(e) {
-        let numbers = e.target.value.split(' ').map(nb => parseFloat(nb))
+        if (e.target.value === '') {
+            return
+        }
+        let numbers = e.target.value.trim().replace(/\s+/g, ' ').split(' ').map(nb => parseFloat(nb))
         if (numbers.includes(NaN)) {
             this.input.classList.add('error')
             numbers = numbers.remove(item => isNaN(item))
+            if (numbers.length === 0) {
+                return
+            }
         } else {
             this.input.classList.remove('error')
         }
