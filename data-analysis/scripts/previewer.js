@@ -7,6 +7,7 @@ class Previewer {
 
     static cacheDOM() {
         this.input = document.querySelector('#preview-input')
+        this.previewResult = document.querySelector('#preview-result')
         this.median = document.querySelector('#median')
         this.mean = document.querySelector('#mean')
         this.range = document.querySelector('#range')
@@ -19,8 +20,13 @@ class Previewer {
 
     static updateResults(e) {
         if (e.target.value === '') {
+            this.previewResult.classList.add('need-data')
+            this.input.classList.remove('error')
             return
         }
+
+        this.previewResult.classList.remove('need-data')
+
         let numbers = e.target.value.trim().replace(/\s+/g, ' ').split(' ').map(nb => parseFloat(nb))
         if (numbers.includes(NaN)) {
             this.input.classList.add('error')
