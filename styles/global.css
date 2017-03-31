@@ -12,7 +12,16 @@ section {
     background-color: #fff;
     padding: 10px;
     margin: 20px 0;
-    box-shadow: 0 0 15px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+section.primary {
+    box-shadow: 0 0 40px #b5b5b5;
+}
+
+section.shy {
+    background: none;
+    box-shadow: none;
 }
 
 h1 {
@@ -42,4 +51,18 @@ pre {
 
 p {
     text-align: justify;
+}
+
+.text-center, .text-center p {
+    text-align: center;
+}
+
+.signature {
+    margin: 30px 0;
+    text-align: center;
+    color: #808080;
+}
+
+.signature a {
+    color: #2d2d2d;
 }
